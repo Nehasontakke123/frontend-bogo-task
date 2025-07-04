@@ -473,5 +473,6 @@ body {
 
   .price-align {
     align-items: flex-end;
+    margin-top: 7px;
   }
 }
