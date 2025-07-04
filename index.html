@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BOGO Offer Product Selection Page" />
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="horizontal-row"></div>
+        <h1 class="title">
+          YAY! It’s B<span class="highlight">O</span>G<span class="highlight"
+            >O</span
+          >
+        </h1>
+        <div class="horizontal-row"></div>
+      </header>
+
+      <!-- Product Selection -->
+      <section class="product-selection">
+        <!-- Option 1 -->
+        <div class="option" data-price="10.00" data-id="1">
+          <div>
+            <input type="radio" name="unit" id="unit1" value="1" />
+            <label for="unit1">1 Unit</label>
+            <span class="tag tag-10">10% Off</span>
+            <p class="standard-price">Standard Price</p>
+          </div>
+          <div class="price-box">
+            <div class="price-align">
+              <span class="price">$10.00 USD</span>
+              <span class="original-price">$24.00 USD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Option 2 -->
+        <div class="option1 popular selected" data-price="18.00" data-id="2">
+          <div class="popular-tag">MOST POPULAR</div>
+          <div>
+            <input type="radio" name="unit" id="unit2" value="2" checked />
+            <label for="unit2">2 Unit</label>
+            <span class="tag tag-20">20% Off</span>
+            <div class="customize">
+              <div class="size_name">
+                <span>Size</span>
+                <span>Colour</span>
+              </div>
+              <div>
+                <label>#1</label>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                </select>
+                <select>
+                  <option>Black</option>
+                  <option>White</option>
+                </select>
+              </div>
+              <div>
+                <label>#2</label>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                </select>
+                <select>
+                  <option>Black</option>
+                  <option>White</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="price-box">
+            <div class="price-align">
+              <span class="price">$18.00 USD</span>
+              <span class="original-price">$24.00 USD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Option 3 -->
+        <div class="option2" data-price="24.00" data-id="3">
+          <div>
+            <input type="radio" name="unit" id="unit3" value="3" />
+            <label for="unit3">3 Unit</label>
+            <span class="tag tag-30">30% Off</span>
+          </div>
+          <div class="price-box">
+            <div class="price-align">
+              <span class="price">$24.00 USD</span>
+              <span class="original-price">$24.00 USD</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Total Section -->
+      <section class="total">
+        <p class="delivery">Free Delivery</p>
+        <p>Total : <span id="total-price">$18.00 USD</span></p>
+      </section>
+
+      <!-- Add to Cart Button -->
+      <button id="add-to-cart">+ Add to Cart</button>
+
+      <!-- Modal -->
+      <div
+        id="popup-modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <div class="modal-content">
+          <p id="modalTitle">Item added to cart!</p>
+          <button class="close-btn" id="close-popup">Close</button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">&copy; Powered by Pumper</footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
